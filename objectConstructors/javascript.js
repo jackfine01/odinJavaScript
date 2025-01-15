@@ -47,3 +47,25 @@ function Person(name) {
   player1.getMarker(); // My marker is 'X'
   player2.getMarker(); // My marker is 'O'
   
+
+
+  let head = {
+    glasses: 1
+  };
+  
+  let table = {
+    pen: 3
+  };
+  
+  let bed = {
+    sheet: 1,
+    pillow: 2
+  };
+  
+  let pockets = {
+    money: 2000
+  };
+
+
+  Object.setPrototypeOf(bed.prototype, table.prototype);
+  Object.setPrototypeOf(pockets.prototype, bed.prototype);
